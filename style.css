@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif; /* Keep the font-family */
+}
+
+h2, h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Animate.css for global animations */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+.navbar .nav-link {
+    margin-right: 20px; /* Space between navbar items */
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('/icons/banner.png') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 80px 0;
+}
+
+/* Skills Section */
+#skills {
+    padding: 80px 0;
+}
+
+.tech-item {
+    border: 1px solid #007bff;
+    padding: 5px 10px; /* Adjusted padding */
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tech-item:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.skill-group {
+    margin: 20px;
+    padding: 10px 10px; /* Adjusted padding */
+    border-radius: 5px;
+    border: 1px solid #6f42c1;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 0;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; /* Arrange cards in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.project-item {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Optional max-width for cards */
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0; /* Border around the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background-color: #fff; /* Card background color */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Space between projects */
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a max-height to maintain uniformity */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    border-top-left-radius: 10px; /* Rounded corners */
+    border-top-right-radius: 10px; /* Rounded corners */
+}
+
+.card-body {
+    border-top: 1px solid #e0e0e0; /* Inner border between image and body */
+    padding: 15px; /* Padding for card body */
+}
+
+.project-button {    
+    flex: auto;
+    display: inline-block;
+    margin: 5px;
+    justify-content: end;
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form .form-label {
+    font-weight: 500;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Additional Styles */
+section {
+    background: linear-gradient(135deg, #ffffff, #e9ecef);
+    padding: 60px 0;
+    animation: fadeIn 1.5s ease; /* Fade-in effects for sections */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
