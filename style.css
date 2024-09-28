@@ -41,7 +41,7 @@ footer p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('/icons/banner.png') no-repeat center center/cover;
+    background: url('icons/banner.png') no-repeat center center/cover;
     color: white;
 }
 
